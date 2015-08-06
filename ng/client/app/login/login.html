@@ -1,9 +1,9 @@
 <section>
 <form name="form" ng-submit="login()">
+  {{cats}}
   <fieldset>
     <legend>Login form</legend>
-
-    <div class="form-group">
+    <div class="form-group" ng-init="dogs = 'a message'" >
       <label>Email</label>
       <input type="text" ng-model="user.email">
       <p class="hint" ng-show="form.email.$error.required && submitted">Email is

@@ -6,6 +6,7 @@ angular.module('ngApp', [
   'ngSanitize',
   'ui.router',
   'lbServices',
+  'AuthService',
   'contentful'
 ])
   .config(function ($stateProvider, $urlRouterProvider, $locationProvider) {
