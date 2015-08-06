@@ -1,0 +1,16 @@
+<div ng-include="'components/navbar/navbar.html'"></div>
+
+<header class="hero-unit" id="banner">
+  <div class="container">
+    <h1>Direct Giving</h1>
+    <p class="lead">Here is all the Campaigns in Contentful!</p>
+  </div>
+    <h3 contentful-entry="'content_type=34IkxLcJ3iueICYoeKca4O'">
+      <!-- Note to Cebo: Eventually, we will replace ^^^^ that nasty ID with a global variable -->
+      <!-- e.g. $CAMPAIGNS -->
+      <!-- ...i just don't know how to do that yet -->
+      <!-- here's the documentation for ng-contentful:
+          https://github.com/jvandemo/angular-contentful -->
+      {{ $contentfulEntry.fields }}
+    </h3>
+</header>
